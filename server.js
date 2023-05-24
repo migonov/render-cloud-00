@@ -24,6 +24,10 @@ app.get('/add_user', function(req, res) {
     res.end("User added");
 })
 
+app.get('/profile', function(req, res) {
+    res.end("Michał Goniakowski");
+})
+
 const listener = app.listen(8080, 
 	() => console.log(`Listening on ${ listener.address().port }`));
 
